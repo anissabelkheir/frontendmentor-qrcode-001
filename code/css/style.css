@@ -1,0 +1,70 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-greyLight: hsl(212, 45%, 89%);
+    --clr-greyBlue: hsl(220, 15%, 55%);
+    --clr-darkBlue: hsl(218, 44%, 22%);
+    --radius: 1rem;
+}
+
+html {
+    font-size: 16px;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Outfit, sans-serif;
+
+    background-color: var(--clr-greyLight);
+}
+
+body,
+html {
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    margin: 1rem;
+}
+
+.card {
+    width: clamp(18.75rem, 20rem, 25%);
+    padding: 1rem;
+
+    border-radius: calc(var(--radius) *1.6);
+    background-color: var(--clr-white);
+}
+
+.card_image {
+    max-width: 100%;
+
+    border-radius: var(--radius);
+}
+
+.card_content {
+    text-align: center;
+
+    padding-inline: .8rem;
+}
+
+.card_title {
+    font-size: 1.25rem;
+
+    color: var(--clr-darkBlue);
+}
+
+.card_body {
+    color: var(--clr-greyBlue);
+}
